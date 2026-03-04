@@ -8,10 +8,10 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) {
     char command = Serial.read();
-  if (command == '1'){
+  if (command == '1'){                   //LED turn ON
     digitalWrite(ledPin, HIGH);
   } 
-  else if (command == '0'){
+  else if (command == '0'){             //LED turn OFF
     digitalWrite(ledPin, LOW);
     }
   }
